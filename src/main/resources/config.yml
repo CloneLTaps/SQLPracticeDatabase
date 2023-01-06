@@ -1,0 +1,56 @@
+# Enter your MySQL or SQLite databases information bellow.
+host: localhost
+port: 3306
+database: db_sql_tutorial
+username: root
+password:
+
+# Setting this to true means this will generate an example SQLite database.
+use-example: true
+# Default name of example database.
+example-name: tutorial
+
+# Use MySQL (setting this to false means you want to use SQLite).
+mysql: false
+# This represents the file extension type of your custom SQLite database file.
+file-type: .db
+
+# This means it will randomly pick problems to give you. Setting this to false means it will go in ascending numerical order.
+pick-randomly: true
+# This will remove correctly answered problems from the problem pool.
+discard-correct-answers: true
+# Setting this to true means the correct queried data will be shown with the description. However, the actual query its self will be hidden until click "Get Answer".
+show-data-queried: true
+
+# The following data wil be used to create the example SQLite database.
+table-one: customers
+create-table-one:
+  - "`customer_id` INTEGER PRIMARY KEY AUTOINCREMENT"
+  - "`first_name` VARCHAR(50) NOT NULL"
+  - "`last_name` VARCHAR(50) NOT NULL"
+  - "`country` VARCHAR(50) NULL"
+  - "`score` INT(32) NULL"
+insert-table-one:
+  - "INSERT INTO customers VALUES (1,'Maria', 'Cramer ', 'Canada', 350)"
+  - "INSERT INTO customers VALUES (2,'Georg',' Rando ', 'England', 760)"
+  - "INSERT INTO customers VALUES (3,'John','Steel','USA', 910)"
+  - "INSERT INTO customers VALUES (4,'Josh','Johnson','Canada', 600)"
+  - "INSERT INTO customers VALUES (5,'Peter','Franken','USA', NULL)"
+  - "INSERT INTO customers VALUES (6,'Marie','Santos','Brazil', 600)"
+
+table-two: employees
+create-table-two:
+  - "`emp_id` INTEGER PRIMARY KEY AUTOINCREMENT"
+  - "`first_name` VARCHAR(50) NOT NULL"
+  - "`last_name` VARCHAR(50) NOT NULL"
+  - "`emp_country` VARCHAR(50) NULL"
+  - "`salary` INT(32) NULL"
+insert-table-two:
+  - "INSERT INTO employees VALUES (1,'John', 'Steel', 'USA', 55000)"
+  - "INSERT INTO employees VALUES (2,'Marie', 'Bertrand', 'Brazil', 75000)"
+  - "INSERT INTO employees VALUES (3,'Bob', 'Stevenson', 'England', 75000)"
+  - "INSERT INTO employees VALUES (4,'Georg', 'Afonso', 'England', 65000)"
+  - "INSERT INTO employees VALUES (5,'Ann', 'Steel', 'USA', 95000)"
+
+
+

@@ -1,0 +1,13 @@
+# There is a 6 column maximum when it comes to creating example databases.
+
+# You can create your own MySQL database with as many tables as you would like. Then enter its details into the config file.
+# Next create your own problem set inside of problems.json (make sure you keep the same json structure).
+# Then load the jar by clicking on it or if that does not work run it from your command prompt. For example if its on your
+# desktop you can do 'cd desktop' and then after clicking enter type 'java -jar SQLPracticeDatabase-1.0.jar'.
+
+# You can also make your own SQLite database which does not require host, port, username, or a password. Make sure this
+# file is placed in the same folder as config, settings, problems, and this readme file. Then follow the same steps as above.
+
+# Lastly, you can instead use the provided example database and problems. This will be done in SQLite since that does not
+# require a server. The example database will be made up of the tables and columns located inside the config.yml file.
+# If you would like you can add or remove data to the existing tables but you cant add extra tables to it.

@@ -1,0 +1,12 @@
+[
+  {
+    "description": "Find the total number of customers in each country but only include countries that have 2 or more customer. Make sure the first column returns the customer amount and the second value returns the country. Also exclude Canada from this final list.",
+    "explanation": "The WHERE statement only works to filter predefined columns. However, the HAVING statement only works on aggregate columns like \"total_customers\" and \"country\" which are created by the GROUP BY statement.",
+    "correctQuery": "SELECT COUNT(country) AS total_customers, country FROM customers WHERE country != 'Canada' GROUP BY country HAVING COUNT(country) > 1"
+  },
+  {
+    "description": "List the first name, last name, and country of all people from both customers and employees. Include all duplicates",
+    "explanation": "",
+    "correctQuery": "SELECT first_name, last_name, country FROM customers UNION ALL SELECT first_name, last_name, emp_country FROM employees"
+  }
+]
