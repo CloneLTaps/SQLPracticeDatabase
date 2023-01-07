@@ -19,7 +19,7 @@ top left corner.
 ![image](https://user-images.githubusercontent.com/83735831/211122048-c801b523-7d7a-46f1-9919-306974813546.png)
 
 # How to make your own SQLite practice database
-Firstly, if you are wanting to make a flat file SQLite database you will first need to download [SQLite Db Browswer](https://sqlitebrowser.org/dl/) which will give you an
+Firstly, if you are wanting to make a flat file SQLite database you will first need to download [SQLite Db Browser](https://sqlitebrowser.org/dl/) which will give you an
 easy way to create databases. Using that you can also add all of the tables and columns before then populating it. Once that is done place the db file next to the
 other auto generated files. Secondly, go into your config file and make sure 'mysql' is set to false then ensure 'file-type' matches your file type. After that make sure 
 you set 'use-example' to false and lastly change 'database' to the name flat file database.
